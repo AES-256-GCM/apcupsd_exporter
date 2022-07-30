@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  apcupsd-exporter:
+    build: .
+    command: |
+      -apcupsd.addr 192.168.1.21:3551
+    ports:
+      - 9162:9162
